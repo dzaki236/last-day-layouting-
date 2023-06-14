@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 02</title>
+    <style>
+        .container {
+            width: auto;
+            height: auto;
+            background: #ecf0f1;
+            display: flex;
+            flex-direction: row;
+            /* Pilihan valuenya ada:  row | row-reserve | column | column-reserve */
+
+            justify-content: center;
+            /* Pilihan valuenya ada:  flex-start | flex-end | center | space-between | space-arround | baseline */
+
+            align-items: flex-end;
+            /* Pilihan valuenya ada:  flex-start | flex-end | center | baseline | stretch*/
+
+            justify-content: space-arround;
+            /* Pilihan valuenya ada:  flex-start | flex-end | center | space-between | space-arround | baseline */
+            margin: 50px auto;
+            padding: 20px;
+            font-family: Poppins, "Helvetica Neue", arial, sans-serif;
+        }
+
+        .card {
+            width: 120px;
+            height: 120px;
+            text-align: center;
+            line-height: 120px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .bg-card1 {
+            background-color: #1dd0ad;
+        }
+
+        .bg-card2 {
+            background-color: #9b59b6;
+        }
+
+        .bg-card3 {
+            background-color: #e67e22;
+        }
+
+        .bg-card4 {
+            background-color: #f1c40f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card bg-card1">1</div>
+        <div class="card bg-card2">2</div>
+        <div class="card bg-card3">3</div>
+        <div class="card bg-card4">4</div>
+    </div>
+</body>
+
+</html>
